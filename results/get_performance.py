@@ -25,14 +25,16 @@ if __name__ == '__main__':
     parser.add_argument('ground_truth', type=str,
                         help='JSON File with ground truth')
     parser.add_argument('extracted', type=str,
-                        help='JSON File with ground truth')
-    parser.add_argument('-extract_key', default="keywords_in", type=str)
-    parser.add_argument('-metric_type', default="exact", type=str)
+                        help='JSON File with extracted keywords')
+    parser.add_argument('-et', default="keywords_in", type=str,
+                        help='Extractive (keywords_in) or abstractive (keywords_not_in) evaluation')
+    parser.add_argument('-mt', default="exact", type=str,
+                        help='The type of evaluation metric (i.e., stem, partial, exact)')
     args = parser.parse_args()
 
     # evaluate the model
     perf = get_results(args.ground_truth, args.extracted,
-                       args.extract_key, args.metric_type)
+                       args.et, args.mt)
     print("Precision:", perf["precision"])
     print("Recall:", perf["recall"])
     print("F1:", perf["f1"])
