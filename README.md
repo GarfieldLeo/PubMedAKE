@@ -1,5 +1,5 @@
 # PubMedAKE Dataset
-
+[![data-extract.png](https://i.postimg.cc/Kz61vVp5/data-extract.png)](https://postimg.cc/S2GSgZhX)
 
 ## Introduction to PubMedAKE
 
