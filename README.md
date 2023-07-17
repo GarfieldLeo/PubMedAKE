@@ -4,7 +4,8 @@
 
 PubMedAKE is a large, author-assigned keyphrase extraction dataset that contains the non-commerical use articles from the PubMed Open Access Subset. The dataset contains 843,629 articles and stores the title, abstract, PubMedID, and both the extractive and abstractive keywords (see example image below). The dataset is randomly split into three files: train, validation, and test. A selected version of the dataset, PubMedAKE_{small} contains articles that contain 5 to 25 extractive (keywords_in) keywords. All 6 data files can be found on [Zenodo](https://doi.org/10.5281/zenodo.6330817). To facilitate usage, a small sample with 1000 articles is available in the `data` folder.
 
-[![data-extract.png](https://i.postimg.cc/Kz61vVp5/data-extract.png)](https://postimg.cc/S2GSgZhX)
+<img src="data-extract.png" width="800">
+
 
 
 This toolkit allows for easy benchmarking of state-of-the-art keyphrase extraction models such as `pke` on PubMedAKE. The tookit can be used to replicate the results of several baseline models, assess new models using the same performance metrics (exact match, match with stemming, and partial match with stemming).
