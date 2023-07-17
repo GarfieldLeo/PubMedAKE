@@ -4,7 +4,7 @@
 
 PubMedAKE is a large, author-assigned keyphrase extraction dataset that contains the non-commerical use articles from the PubMed Open Access Subset. The dataset contains 843,629 articles and stores the title, abstract, PubMedID, and both the extractive and abstractive keywords (see example image below). The dataset is randomly split into three files: train, validation, and test. A selected version of the dataset, PubMedAKE_{small} contains articles that contain 5 to 25 extractive (keywords_in) keywords. All 6 data files can be found on [Zenodo](https://doi.org/10.5281/zenodo.6330817). To facilitate usage, a small sample with 1000 articles is available in the `data` folder.
 
-<img src="data-extract.png" width="800">
+<img src="data-extract.png" width="1000">
 
 
 
